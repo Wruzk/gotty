@@ -1,0 +1,5 @@
+# Ignore common files
+*.log
+*.tmp
+node_modules/
+.DS_Store
