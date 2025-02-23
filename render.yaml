@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: gotty-terminal
+    env: docker
+    plan: free
+    dockerfilePath: Dockerfile
+    healthCheckPath: /
+    autoDeploy: true
+    region: oregon
+    
