@@ -1,5 +1,8 @@
-# Use a lightweight base image
-FROM debian:bullseye-slim
+# Sử dụng Ubuntu 22.04 làm base image
+FROM ubuntu:22.04
+
+# Đặt biến môi trường để tránh các prompt không cần thiết
+ENV DEBIAN_FRONTEND=noninteractive
 
 # Cài đặt các dependencies cần thiết
 RUN apt-get update && apt-get install -y \
